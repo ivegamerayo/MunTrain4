@@ -5,10 +5,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MunTrain3Application implements CommandLineRunner {
+public class MunTrain4Application implements CommandLineRunner {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MunTrain3Application.class, args);
+		SpringApplication.run(MunTrain4Application.class, args);
 	}
 	
 	@Override

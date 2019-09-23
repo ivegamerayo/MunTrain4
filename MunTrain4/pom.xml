@@ -8,10 +8,10 @@
 		<version>2.1.8.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.telefonica.jee</groupId>
-	<artifactId>spring-mvc2</artifactId>
+	<groupId>com.example.demo</groupId>
+	<artifactId>MunTrain4</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-mvc2</name>
+	<name>MunTrain4</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
