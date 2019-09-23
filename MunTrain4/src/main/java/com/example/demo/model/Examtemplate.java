@@ -30,22 +30,12 @@ public class Examtemplate implements Serializable {
 	@Column(name="publisher")
 	private boolean publisher;
 	
-	/*
-	 * @Column(name="dificulty") private int dificulty;
-	 */
-	
 	
 	 @OneToMany (cascade=CascadeType.ALL) 
 	 @JoinColumn (name ="id_examtemplate") 
 	 private List<Question> question = new ArrayList<Question>();
-	
-	
-	/*
-	 * @OneToMany (mappedBy = "examtemplate") private List<Question> question = new
-	 * ArrayList<Question>();
-	 */
-	 
-	 
+
+	 	 
 	
 	public Examtemplate() {
 	}

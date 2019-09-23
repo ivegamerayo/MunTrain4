@@ -18,7 +18,6 @@ import com.example.demo.service.ExamtemplateService;
 
 
 
-
 @Controller
 public class ExamtemplateController {
 	
@@ -58,12 +57,18 @@ public class ExamtemplateController {
 	@GetMapping("/examtemplates/{id}")
 	public ModelAndView getExamtemplate(@PathVariable Long id) {
 		log.debug("request to get Examtemplate : {}", id);
-		Optional<Examtemplate> examtemplate = examtemplateService.findOne(id);
-
+		Optional<Examtemplate> examtemplateWrap = examtemplateService.findOne(id);
+		
 		ModelAndView mav = new ModelAndView();
-		if (examtemplate.isPresent()) {
+		if (examtemplateWrap.isPresent()) {
+			Examtemplate examtemplate = examtemplateWrap.get();
+			if(examtemplate.getPublisher()!=true) {
 			mav.setViewName("examtemplate-edit");
-			mav.addObject("examtemplate", examtemplate.get());
+			mav.addObject("examtemplate", examtemplate);
+			}else {
+				mav.setViewName("publisherError");
+				mav.addObject("message", "Examtemplate already publisher");
+			}	
 		} else {
 			mav.setViewName("examtemplate-list");
 			mav.addObject("message", "Examtemplate not found");

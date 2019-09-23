@@ -31,7 +31,7 @@
 							<form:option value="TRUE">true</form:option>
 						</form:select>
 					</div>
-										
+					<form:hidden path="question"/>		
 					<form:hidden path="id"/>			
 					
 					<a class = "btn btn-info" href = "${pageContext.request.contextPath}/examtemplates" >Back to Exam Templates List</a>
