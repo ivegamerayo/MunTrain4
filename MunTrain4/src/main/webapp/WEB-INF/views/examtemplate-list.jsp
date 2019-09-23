@@ -8,18 +8,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Exam Template List</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+<script src="https://kit.fontawesome.com/dc38649408.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	
-	<div class = "pt-5 container">
+	<div class = " container">
 		
-		<h1>Exam Template Directory</h1>
+		<h1>Crea tu examen</h1>
 		<hr/>
 		
 		
 		<p>
-			<a class = "btn btn-primary" href="${pageContext.request.contextPath}/examtemplates/empty">Create New Exam</a>
+			<button class = "btn btn-primary" onclick="window.location.href = '${pageContext.request.contextPath}/examtemplates/empty'">Create</button>
 			
 		</p>
 	
@@ -43,9 +43,10 @@
 						</c:forEach>
 					</td>
 					<td> 
-						<a class="btn btn-info" href = "${pageContext.request.contextPath}/examtemplates/${examtemplate.id}">Edit</a> 
-						<a class="btn btn-danger" href = "${pageContext.request.contextPath}/examtemplates/${examtemplate.id}/delete">Delete</a>
-						<a class="btn btn-info" href = "${pageContext.request.contextPath}/questions/empty">Add Questions</a>
+						
+						<a href = "${pageContext.request.contextPath}/examtemplates/${examtemplate.id}"><i class="fas fa-edit"></i> </a>
+						<a href = "${pageContext.request.contextPath}/examtemplates/${examtemplate.id}/delete"><i class="fas fa-trash-alt" style="color: red;"></i></a>
+						<a href = "${pageContext.request.contextPath}/questions/empty" ><i class="fas fa-comment-medical" style="color: green;"></i></a>
 					</td>
 				</tr>
 				
