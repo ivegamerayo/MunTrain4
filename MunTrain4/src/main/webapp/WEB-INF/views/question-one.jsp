@@ -35,6 +35,7 @@
 				<tr>
 					<td>${question.description}</td>
 					<td>${question.examtemplate}</td>
+					
 					<!-- Aquí estamos cogiendo el objeto question asociado por la relación bidireccional a response.
 					Al ser un Array podemos sacar sus elementos y crear un enlace con ellos -->
 					<td>

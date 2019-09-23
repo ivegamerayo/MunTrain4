@@ -126,7 +126,7 @@ public class QuestionController {
 	public String deleteQuestion(@PathVariable Long id) {
 		log.debug("request to delete Question : {}", id);
 		questionService.delete(id);
-		return "redirect:/questions";
+		return "redirect:/examtemplates";
 	}
 	
 

@@ -35,7 +35,7 @@ public class Examtemplate implements Serializable {
 	 */
 	
 	
-	 @OneToMany (fetch = FetchType.EAGER) 
+	 @OneToMany (cascade=CascadeType.ALL) 
 	 @JoinColumn (name ="id_examtemplate") 
 	 private List<Question> question = new ArrayList<Question>();
 	
