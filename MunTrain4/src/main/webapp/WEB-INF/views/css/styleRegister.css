@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Slabo+13px&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Livvic', sans-serif;
+}
+body{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+.v-header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.container{
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+.fullscreen-video-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.fullscreen-video-wrap video{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.header-overlay{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #5FB49C;
+    z-index: 1;
+    opacity: 0.2;
+}
+.header-content{
+    z-index: 2;
+    color: #ffffff;
+}
+#registro-title{
+    margin-bottom: 6vh;
+}
+.redirectlogin{
+    /*Cambiar color mala visibilidad >> */ color: #FE7F2D ;
+    font-size: 1.3rem;
+    margin-left: 2vh;
+    font-weight: bold;
+}
+input{
+    color: #ffffff;
+    font-family: 'Slabo 13px', serif;
+    font-weight: 500;
+}
+.btn-submit{
+    background: #053225  !important;
+}

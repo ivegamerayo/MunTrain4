@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    background-color: #d7dadf;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-container{
+    background-color: #d7dadf;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.tiempo-container{
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.viewport-main{
+    height: 34.5vw;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-container{
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding: 60px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-box-shadow: 0px -1px 6px -1px #053225;
+    -moz-box-shadow: 0px -1px 6px -1px #053225;
+    box-shadow: 0px -1px 6px -1px #053225;
+    border-radius: 6px;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+.title-create{
+    position: relative;
+    bottom: 30px;
+    left: 25px;
+}
+.icons-create-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+}
+footer{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #FFFFFF;
+    height: 6vw;
+    padding: 4px 0px;
+
+}
+.start-game-container{
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+    font-weight: bold;
+    
+}
+.start-game-container p{
+    position: relative;
+    top: 6px;
+}
+.start-game-container button{
+    background: #f5853b;
+    padding: 20px 25px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: none;
+    margin-left: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.start-game-container button:hover{
+    background: #fa9b5b;
+}
+.atajos-p{
+    font-size: 1em;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}

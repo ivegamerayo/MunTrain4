@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MunTrain4Application",
+            "request": "launch",
+            "mainClass": "com.example.demo.MunTrain4Application",
+            "projectName": "MunTrain4"
+        }
+    ]
+}
